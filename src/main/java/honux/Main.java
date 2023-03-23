@@ -1,7 +1,13 @@
 package honux;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        //ApplicationContext app = new ClassPathXmlApplicationContext("./config.xml", Main.class);
+        Duck duck = new Duck(new Wing());
+        duck.fly();
+
     }
 }
