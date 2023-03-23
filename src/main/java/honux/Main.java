@@ -8,8 +8,6 @@ public class Main {
         ApplicationContext ctx = new ClassPathXmlApplicationContext("config.xml", Main.class);
 
         Duck duck = ctx.getBean("duck", Duck.class);
-        Wing wing = ctx.getBean("wing", Wing.class);
-        duck.setWing(wing);
         duck.fly();
 
     }
