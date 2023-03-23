@@ -6,7 +6,7 @@
 
 
     <bean id="duck" class="honux.Duck">
-        <property name="wing" ref="wing"/>
+        <constructor-arg ref="wing" />
     </bean>
 
     <bean id="wing" class="honux.Wing" />
