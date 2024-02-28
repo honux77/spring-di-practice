@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="redWing" class="honux.RedWing" />
+    <bean id="yelloWing" class="honux.YellowWing" />
+
+    <bean id="redDuck" class="honux.Duck">
+        <property name="name" value="레드윙"/>
+        <property name="wing" ref="yelloWing"/>
+    </bean>
+</beans>
